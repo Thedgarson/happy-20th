@@ -1,0 +1,132 @@
+/* Fonts & Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background: #fff;
+  color: #333;
+  overflow-x: hidden;
+}
+
+/* Hero Section */
+.hero {
+  background: url("assets/bg-video-top.gif") center center/cover no-repeat;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(30, 30, 30, 0.4);
+  z-index: 0;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  color: #fff;
+  font-family: "Sacramento", cursive;
+  z-index: 1;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Love Section */
+.love {
+  padding: 4rem 2rem;
+  background: #fffbf5;
+  text-align: center;
+}
+
+.love p {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #d94f04;
+  font-family: "Sacramento", cursive;
+}
+
+/* Gallery Section */
+.gallery {
+  padding: 4rem 2rem;
+  background: #f5f5f5;
+  text-align: center;
+}
+
+.gallery h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+
+.grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.grid img {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.grid img:hover {
+  transform: scale(1.05);
+}
+
+/* music*/
+.music-player {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #fff;
+  padding: 0.7rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.15);
+  font-family: "Inter", sans-serif;
+  z-index: 999;
+}
+
+.music-player .info {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.music-player .controls {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.music-player button {
+  background: #ff8c00;
+  border: none;
+  padding: 0.4rem 0.7rem;
+  border-radius: 5px;
+  color: white;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.music-player button:hover {
+  background: #e37000;
+}
+
+.music-player input[type="range"] {
+  width: 100px;
+}
